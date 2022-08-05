@@ -1,5 +1,4 @@
 package com.demoqa;
-import com.codeborne.selenide.ClickOptions;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -43,25 +42,11 @@ public class StudentFormTest {
 
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
         $(".table-dark").shouldHave(text("Anna Peters"));
-        $(".table-dark").shouldHave(text("anna.peters@yahoo.com"));
-        $(".table-dark").shouldHave(text("Female"));
-        $(".table-dark").shouldHave(text("7049432621"));
-        $(".table-dark").shouldHave(text("26 November,1998"));
-        $(".table-dark").shouldHave(text("910 Cameron village drive"));
-        $(".table-dark").shouldHave(text("Math"));
+        $(".table-dark").shouldHave(text("anna.peters@yahoo.com"),
+                (text("anna.peters@yahoo.com")),
+                (text("anna.peters@yahoo.com")),
+                (text("26 November,1998")),
+                (text("910 Cameron village drive")),
+                (text("Math")));
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
