@@ -39,7 +39,7 @@ public class StudentFormWithRandomUtilsFakerTests extends TestBase {
          email = faker.internet().emailAddress();
          gender = "Female";
          phoneNumber = faker.phoneNumber().subscriberNumber(10);
-         day = "30";
+         day = String.format("%02d", faker.number().numberBetween(1,28));
          month = "July";
          year = "1998";
          comma = ",";
