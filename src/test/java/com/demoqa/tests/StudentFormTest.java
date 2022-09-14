@@ -1,18 +1,10 @@
 package com.demoqa.tests;
-import com.codeborne.selenide.Configuration;
 import com.demoqa.pages.RegistrationFormPage;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 
-public class   StudentFormTest {
+public class  StudentFormTest extends TestBase {
     RegistrationFormPage registrationFormPage= new RegistrationFormPage();
-
-    @BeforeAll
-    static void configure() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
-    }
 
     @Test
     void fillStudentForm() {

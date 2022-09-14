@@ -5,8 +5,6 @@ import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Locale;
-
 import static java.lang.String.format;
 
 public class StudentFormWithRandomUtilsFakerTests extends TestBase {
