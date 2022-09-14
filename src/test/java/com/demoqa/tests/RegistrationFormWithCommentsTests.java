@@ -1,7 +1,5 @@
 package com.demoqa.tests;
 
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.appear;
@@ -9,16 +7,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class RegistrationFormWithCommentsTests {
-
-    @BeforeAll
-    static void configure() {
-
-        Configuration.baseUrl = "https://demoqa.com";
-//        Configuration.timeout = 10000; // 10 seconds
-//        Configuration.browser = "opera";
-        Configuration.browserSize = "1920x1080";
-    }
+public class RegistrationFormWithCommentsTests extends TestBase{
 
     @Test
     void fillFormTest() {
