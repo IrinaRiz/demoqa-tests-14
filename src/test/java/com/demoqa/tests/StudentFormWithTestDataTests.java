@@ -1,7 +1,6 @@
 package com.demoqa.tests;
 
 import com.demoqa.pages.RegistrationFormPage;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static com.demoqa.tests.TestData.*;
