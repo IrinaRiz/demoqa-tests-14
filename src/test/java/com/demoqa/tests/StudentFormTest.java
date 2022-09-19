@@ -1,5 +1,6 @@
 package com.demoqa.tests;
 import com.demoqa.pages.RegistrationFormPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
@@ -7,6 +8,7 @@ public class  StudentFormTest extends TestBase {
     RegistrationFormPage registrationFormPage= new RegistrationFormPage();
 
     @Test
+    @Tag("properties")
     void fillStudentForm() {
         registrationFormPage.openPage()
                 .setFirstName("Anna")
